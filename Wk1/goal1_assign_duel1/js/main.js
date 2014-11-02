@@ -20,5 +20,20 @@ ANALYZEDuel#1
     //player health
     var playerOneHealth = 100;
     var playerTwoHealth = 100;
-    
+
+    var round = 1;
+
+    function fight(){
+        console.log("in the fight function");
+
+    };
+
+    function winnerCheck(){
+        //code will go here
+    };
+
+    /****** The program gets started below ******/
+    console.log ("program starts here");
+    fight();
+
 })();
