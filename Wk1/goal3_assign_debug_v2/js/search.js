@@ -72,11 +72,11 @@
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
 	var noMatch = function(){//variable no match function
-		var html = ''+
-			'<p>No Results found.</p>'+
-			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
+		var html = ''+; //variable html equals undefined
+			'<p>No Results found.</p>'+//paragraph No Results Found
+			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'//paragraph try searching
 		;
-		resultsDIV.innerHTML = html;
+		resultsDIV.innerHTML = html;//
 	};
 	
 	// Put matches into page as paragraphs with anchors
