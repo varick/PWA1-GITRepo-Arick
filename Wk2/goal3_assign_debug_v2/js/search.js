@@ -42,7 +42,7 @@
 
 			// array to store matched results from database.js
 			var results = [];//variable result equals matched result
-//////////
+
 			// loop through each index of db array
 			for (var i = 0, j = db.length; i < j; i++) {//loop variable equal 0, j equals database length: 0<database length add 1
 

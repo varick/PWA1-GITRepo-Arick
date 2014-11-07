@@ -9,7 +9,7 @@ ANALYZEDuel#1
 
     console.log("FIGHT!!!");// console.log FIGHT!!!
 
-    //player name
+    /*//player name
     var playerOneName = "Spiderman";// setting variable player one name to Spiderman
     var playerTwoName = "Batman";// setting variable player two name to Batman
 
@@ -20,13 +20,16 @@ ANALYZEDuel#1
     //player health
     var playerOneHealth = 100;// variable player one max health to 100
     var playerTwoHealth = 100;// variable player two max health to 100
-
+*/
+    var fighter1 = ["Spiderman",100,20];//fighter1 array name, max health, min health; index 0 name, 1 max, 2 min health
+    var fighter2 = ["Batman",100,20];//fighter2 array, name, max health, min health
+    
     var round = 0;//variable set first round to start at 1
 
     function fight(){// function for fight
         console.log("in the fight function");//console.log in the fight function
 
-        alert(playerOneName+":"+playerOneHealth+" *Start* " +playerTwoName+":"+playerTwoHealth);/*alert Spiderman, and
+        alert(fighter1[0]+":"+fighter1[1]+" *Start* " +playerTwoName+":"+playerTwoHealth);/*alert Spiderman, and
         health Start Batman and health*/
 
         for (var i=0; i<10; i++){//variable i for round numbers
