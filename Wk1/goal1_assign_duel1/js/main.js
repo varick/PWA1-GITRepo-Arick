@@ -8,9 +8,9 @@ ANALYZEDuel#1
 (function(){
 
     console.log("FIGHT!!!");// console.log FIGHT!!!
-    
 
-    var fighter1 = ["Spiderman",100,20];//array fighter1 index 0 name, 1 max health, 2 min health
+
+    var fighter1 = ["Superman",100,20];//array fighter1 index 0 name, 1 max health, 2 min health
     var fighter2 = ["Batman",100,20];//array fighter2 index 0 name, 1 max health, 2 min health
 
     var round = 0;//variable set first round to start at 1
