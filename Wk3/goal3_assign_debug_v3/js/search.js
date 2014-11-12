@@ -1,5 +1,5 @@
 
-//Vincent Arick - PWA1 - October 2014
+//Vincent Arick - PWA1 - November 11, 2014
 
 
 // Create privatized scope using a self-executing function
