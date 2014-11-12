@@ -24,20 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/database.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+            <state vertical-scroll-proportion="0.46676096" vertical-offset="0" max-vertical-offset="707">
               <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4610951" vertical-offset="1240" max-vertical-offset="1980">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1980">
               <caret line="104" column="100" selection-start-line="104" selection-start-column="100" selection-end-line="104" selection-end-column="100" />
               <folding>
                 <marker date="1415757941000" expanded="false" signature="3580:3595" placeholder="..." />
@@ -322,21 +322,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4610951" vertical-offset="1240" max-vertical-offset="1980">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1980">
           <caret line="104" column="100" selection-start-line="104" selection-start-column="100" selection-end-line="104" selection-end-column="100" />
           <folding>
             <marker date="1415757941000" expanded="false" signature="3580:3595" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46676096" vertical-offset="0" max-vertical-offset="707">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
