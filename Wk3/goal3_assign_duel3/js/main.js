@@ -1,19 +1,34 @@
 /*
 Vincent Arick
 11-14-14
-ANALYZEDuel#1
+Duel#3
  */
 
 //self-executing function
 (function(){
 
-    console.log("test5");// console.log FIGHT!!!
+    console.log("Test");// console.log Test
 
+    //DOM variables
+    var superman = document.getElementById("sm");
+    var batman = document.getElementById("bm");
+    var round = document.getElementById("head");
+    var button = document.getElementById("fight button");
 
+    //Button setup
+    button.addEventListener("click", fight, false);
+
+    //Array Fighters
     var fighter1 = ["Superman",100,20];//array fighter1 index 0 name, 1 max health, 2 min health
+
     var fighter2 = ["Batman",100,20];//array fighter2 index 0 name, 1 max health, 2 min health
 
     var round = 0;//variable set first round to start at 1
+
+    //Inner html
+    superman.innerHTML = fighter1[0] + ":" + fighter[2];
+    batman.innerHTML = fighter2[0] + ":" + fighter[2];
+    round.innerHTML = "Click button to fight!";
 
     function fight(){// function for fight
         console.log("in the fight function");//console.log in the fight function
