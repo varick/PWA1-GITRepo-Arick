@@ -38,7 +38,7 @@ Duel#3
         superman.innerHTML = fighter1[0] + ":" + fighter1[2];
         batman.innerHTML = fighter2[0] + ":" + fighter2[2];
 
-        
+
 
             //random formula is - Math.floor(Math.random() * (max - min) + min);
 
@@ -62,11 +62,15 @@ Duel#3
             round.innerHTML = "ROUND #" + round + "Results";
             if(results==="no winner"){// if no winner add a round loop
                 round++;
-                alert(fighter1[0]+":"+fighter1[1]+" *ROUND "+round+" OVER* " +fighter2[0]+":"+fighter2[1]);/*
-                alert Spiderman and health round number over Batman and health*/
+                superman.innerHTML = fighter1[0] + ":" + fighter1[2];
+                batman.innerHTML = fighter2[0] + ":" + fighter2[2];
             }else{// or there is a winner break function
-                alert(results);// alert outcome of fight
-                break;//break function
+                superman.innerHTML = result;
+                batman.innerHTML = "";
+                //Disable button
+                button.removeEventListener("click", fight, false);
+
+                document.querySelector(".buttonblue"). innerHTML = "Finished";
             };
 
 
