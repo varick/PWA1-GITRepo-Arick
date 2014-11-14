@@ -26,18 +26,19 @@ Duel#3
     var round = 0;//variable set first round to start at 1
 
     //Inner html
-    superman.innerHTML = fighter1[0] + ":" + fighter[2];
-    batman.innerHTML = fighter2[0] + ":" + fighter[2];
+    superman.innerHTML = fighter1[0] + ":" + fighter1[2];
+    batman.innerHTML = fighter2[0] + ":" + fighter2[2];
     round.innerHTML = "Click button to fight!";
 
-    function fight(){// function for fight
-        console.log("in the fight function");//console.log in the fight function
-
+    //Fight function
+    function fight(){
 
         /*alert(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);/*alert Spiderman, and
         health Start Batman and health*/
+        superman.innerHTML = fighter1[0] + ":" + fighter1[2];
+        batman.innerHTML = fighter2[0] + ":" + fighter2[2];
 
-        for (var i=0; i<10; i++){//variable i for round numbers
+        
 
             //random formula is - Math.floor(Math.random() * (max - min) + min);
 
@@ -58,6 +59,7 @@ Duel#3
             var results = winnerCheck();//variable result winner check function
             console.log(results);//console.log winner check
 
+            round.innerHTML = "ROUND #" + round + "Results";
             if(results==="no winner"){// if no winner add a round loop
                 round++;
                 alert(fighter1[0]+":"+fighter1[1]+" *ROUND "+round+" OVER* " +fighter2[0]+":"+fighter2[1]);/*
@@ -67,7 +69,7 @@ Duel#3
                 break;//break function
             };
 
-        }
+
     };
 
     function winnerCheck(){//setup winner check function
