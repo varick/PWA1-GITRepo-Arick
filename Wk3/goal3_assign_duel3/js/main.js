@@ -1,13 +1,13 @@
 /*
 Vincent Arick
-11-07-14
+11-14-14
 ANALYZEDuel#1
  */
 
 //self-executing function
 (function(){
 
-    console.log("FIGHT!!!");// console.log FIGHT!!!
+    console.log("test5");// console.log FIGHT!!!
 
 
     var fighter1 = ["Superman",100,20];//array fighter1 index 0 name, 1 max health, 2 min health
@@ -18,7 +18,8 @@ ANALYZEDuel#1
     function fight(){// function for fight
         console.log("in the fight function");//console.log in the fight function
 
-        alert(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);/*alert Spiderman, and
+
+        /*alert(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);/*alert Spiderman, and
         health Start Batman and health*/
 
         for (var i=0; i<10; i++){//variable i for round numbers

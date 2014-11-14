@@ -11,7 +11,7 @@
 		currentSearch = ""// variable currentSearch not defined: added semicolon, changed to double quotations
 	;
 	// Validates search query
-	var validate = function (query){// defining validqte as a function: corrected validate spelling, replaced double equal to one equal
+	var validate = function (query){// defining validate as a function: corrected validate spelling, replaced double equal to one equal
 
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) === " "){//loop query 0 = to undefined, added 2 equal signs
