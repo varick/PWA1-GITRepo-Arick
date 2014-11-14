@@ -7,27 +7,27 @@ Duel#3
 //self-executing function
 (function(){
 
-    console.log("Test");// console.log Test
+    console.log("Test1");// console.log Test
 
     //DOM variables
-    var superman = document.getElementById("sm");
+    var superman = document.getElementById("sm");//
     var batman = document.getElementById("bm");
-    var round = document.getElementById("head");
+    var rounds = document.querySelector("h5");// getElementById didn't work got type error null
     var button = document.getElementById("fight button");
 
     //Button setup
     button.addEventListener("click", fight, false);
 
     //Array Fighters
-    var fighter1 = ["Superman",100,20];//array fighter1 index 0 name, 1 max health, 2 min health
+    var fighter1 = ["Superman",100,20];//array fighter1 index 0 name, 1 max health, 2 damage
 
-    var fighter2 = ["Batman",100,20];//array fighter2 index 0 name, 1 max health, 2 min health
+    var fighter2 = ["Batman",100,20];//array fighter2 index 0 name, 1 max health, 2 damage
 
-    var round = 0;//variable set first round to start at 1
+    var round = 1;//variable set first round to start at 1
 
     //Inner html
-    superman.innerHTML = fighter1[0] + ":" + fighter1[2];
-    batman.innerHTML = fighter2[0] + ":" + fighter2[2];
+    superman.innerHTML = fighter1[0] + ":" + fighter1[1];
+    batman.innerHTML = fighter2[0] + ":" + fighter2[1];
     round.innerHTML = "Click button to fight!";
 
     //Fight function
@@ -35,38 +35,37 @@ Duel#3
 
         /*alert(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);/*alert Spiderman, and
         health Start Batman and health*/
-        superman.innerHTML = fighter1[0] + ":" + fighter1[2];
-        batman.innerHTML = fighter2[0] + ":" + fighter2[2];
+        superman.innerHTML = fighter1[0] + ":" + fighter1[1];
+        batman.innerHTML = fighter2[0] + ":" + fighter2[1];
 
 
 
-            //random formula is - Math.floor(Math.random() * (max - min) + min);
-
-            var minDamage1 = fighter1[2] * .5;// min damage1 = Spiderman damage multiply .5
-            var minDamage2 = fighter2[2] * .5;// min damage2 = Batman damage multiply .5
-            var f1 = Math.floor(Math.random()*(fighter1[2]-minDamage1) + minDamage1);/* Math formula to create random
-            and round the number Math.floor*/
-            var f2 = Math.floor(Math.random()*(fighter2[2]-minDamage2) + minDamage2);/* Math formula to create random
-            and round the number Math.floor*/
+            //determine damage
+            var f1 = Math.floor(Math.random()* fighter1[2] + fighter1[2] * .5);
+            var f2 = Math.floor(Math.random()* fighter2[2] + fighter2[2] * .5);
 
             //inflict damage
             fighter1[1]-=f1;//inflict damage
             fighter2[1]-=f2;//inflict damage
 
-            console.log(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);/* console.log
-            Spiderman player health Start Batman player health*/
+            console.log(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);
 
+
+            //check for winner
             var results = winnerCheck();//variable result winner check function
-            console.log(results);//console.log winner check
 
-            round.innerHTML = "ROUND #" + round + "Results";
+
+            rounds.innerHTML = "ROUND #" + round + "Results:";
+            round++;
             if(results==="no winner"){// if no winner add a round loop
-                round++;
-                superman.innerHTML = fighter1[0] + ":" + fighter1[2];
-                batman.innerHTML = fighter2[0] + ":" + fighter2[2];
+
+                superman.innerHTML = fighter1[0] + ":" + fighter1[1];
+                batman.innerHTML = fighter2[0] + ":" + fighter2[1];
+
             }else{// or there is a winner break function
-                superman.innerHTML = result;
+                superman.innerHTML = results;
                 batman.innerHTML = "";
+
                 //Disable button
                 button.removeEventListener("click", fight, false);
 
@@ -80,11 +79,11 @@ Duel#3
         console.log("in winnerCheck FN")//console.log winner check function
         var result="no winner";//variable result no winner
 
-        if(fighter1[1]<1&&fighter2[1]<1){//if boh players health goes below 1
+        if(fighter1[1] < 1 && fighter2 [1] <1){//if boh players health goes below 1
             result = "You Both Die";//they both die
-        }else if(fighter1[1]<1){//Spidermans health goes below 1
+        }else if(fighter1[1] <1){//Superman's health goes below 1
             result =fighter2[0]+" WINS!!!"//Batman wins
-        }else if(fighter2[0]<1){//Batmans health goes below 1
+        }else if(fighter2[1]<1){//Batmans health goes below 1
             result =fighter1[0]+" WINS!!!"//Spiderman wins
         };
 
@@ -92,8 +91,5 @@ Duel#3
 
     };
 
-    /****** The program gets started below ******/
-    console.log ("program starts here");// console.log program starts here
-    fight();//begin fight
 
 })();
