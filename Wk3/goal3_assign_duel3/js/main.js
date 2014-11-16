@@ -10,10 +10,10 @@ Duel#3
     console.log("Test1");// console.log Test
 
     //DOM variables
-    var superman = document.getElementById("sm");//
-    var batman = document.getElementById("bm");
-    var rounds = document.querySelector("h5");// getElementById didn't work got type error null
-    var button = document.getElementById("fight button");
+    var superman = document.getElementById("sm");// variable superman equals "sm"
+    var batman = document.getElementById("bm");// variable batman equal "bm"
+    var button = document.getElementById("fight button");// variable button equals fight button
+    var round = document.getElementById("rn");// variable round equals "rn", BUT NOT WORKING
 
     //Button setup
     button.addEventListener("click", fight, false);
@@ -26,9 +26,9 @@ Duel#3
     var round = 1;//variable set first round to start at 1
 
     //Inner html
-    superman.innerHTML = fighter1[0] + ":" + fighter1[1];
-    batman.innerHTML = fighter2[0] + ":" + fighter2[1];
-    round.innerHTML = "Click button to fight!";
+    superman.innerHTML = fighter1[0] + ":" + fighter1[1];// show Superman:health in header
+    batman.innerHTML = fighter2[0] + ":" + fighter2[1];// show Batman:health in header
+
 
     //Fight function
     function fight(){
@@ -41,13 +41,13 @@ Duel#3
 
 
             //determine damage
-            var f1 = Math.floor(Math.random()* fighter1[2] + fighter1[2] * .5);
-            var f2 = Math.floor(Math.random()* fighter2[2] + fighter2[2] * .5);
+            var f1 = Math.floor(Math.random()* fighter1[2] + fighter1[2] * .5);//superman damage
+            var f2 = Math.floor(Math.random()* fighter2[2] + fighter2[2] * .5);//batman damage
 
             //inflict damage
             fighter1[1]-=f1;//inflict damage
             fighter2[1]-=f2;//inflict damage
-
+            console.log(round+" does round work");//check if rounds work
             console.log(fighter1[0]+":"+fighter1[1]+" *Start* " +fighter2[0]+":"+fighter2[1]);
 
 
@@ -55,7 +55,7 @@ Duel#3
             var results = winnerCheck();//variable result winner check function
 
 
-            rounds.innerHTML = "ROUND #" + round + "Results:";
+            round.innerHTML = "ROUND #" + round + "Results:";
             round++;
             if(results==="no winner"){// if no winner add a round loop
 
@@ -69,13 +69,14 @@ Duel#3
                 //Disable button
                 button.removeEventListener("click", fight, false);
 
-                document.querySelector(".buttonblue"). innerHTML = "Finished";
+                document.querySelector(".buttonblue"). innerHTML = "GAME-OVER";
             };
-
+            console.log(round.innerHTML);//console.log round.innerHTML prints UNDEFINED in console
 
     };
 
     function winnerCheck(){//setup winner check function
+
         console.log("in winnerCheck FN")//console.log winner check function
         var result="no winner";//variable result no winner
 

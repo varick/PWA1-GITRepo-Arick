@@ -10,26 +10,28 @@ body{
 	background: #fff;
 	width: 100%;
 	height: 100%;
+	font-family: arial;
+
 }
 
-#kabal{
+#sm{
 	margin: 0px 0px 0px 15%;
 	float:left;
 }
 
-#kratos{
+#bm{
 	margin: 0px 0px 0px 59%;
 	float:left;
 }
 
-#kabal p{
+#sm p{
 	font-family: arial;
-	font-size:  25px;
+	font-size:  40px;
 }
 
-#kratos p{
+#bm p{
 	font-family: arial;
-	font-size:  25px;
+	font-size:  40px;
 }
 
 #fight_btn{
