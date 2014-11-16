@@ -13,7 +13,7 @@ Duel#3
     var superman = document.getElementById("sm");// variable superman equals "sm"
     var batman = document.getElementById("bm");// variable batman equal "bm"
     var button = document.getElementById("fight button");// variable button equals fight button
-    var round = document.getElementById("rn");// variable round equals "rn", BUT NOT WORKING
+    var round = document.getElementById("round_number");// variable round equals "rn", BUT NOT WORKING
 
     //Button setup
     button.addEventListener("click", fight, false);
